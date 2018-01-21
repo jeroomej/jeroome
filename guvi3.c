@@ -7,5 +7,5 @@ scanf("%c",&z);
 if(z==a,e,i,o,u)
 printf("vowel");
 else
-printf("consonent");
+printf("consonant");
 }
