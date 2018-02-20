@@ -2,15 +2,14 @@
 
 int main(void) 
 {
-	int array[10];
-	int n,i,j,temp;
-	float median;
-	printf("\n enter the array size:");
+	int array[20],n,i,j,temp;
+	float med;
+	printf("\n enter the no. of elements");
 	scanf("%d",&n);
-	printf("\n enter the array elements:");
+	printf("\n enter the array elements");
 	for(i=0;i<n;i++)
 	{
-		scanf("%d",&array[i]);
+       scanf("%d",&array[i]);
 	}
 	for (i=0;i<n;i++)
 	{
@@ -26,12 +25,11 @@ int main(void)
 	}
 	if(n%2==0)
 	{
-		median=(array[n/2]+array[(n-1)/2])/2;
+		med=(array[n/2]+array[(n-1)/2])/2;
 	}
 	else
 	{
-		median=array[n/2];
+		med=array[n/2];
 	}
-	printf("%f",median);
-	return 0;
+	printf("%f",med);
 }
