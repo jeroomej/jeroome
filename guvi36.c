@@ -2,21 +2,21 @@
 #include<conio.h>
 void main() 
 {
-    int n,a[10],temp=0,p,i;
+    int n,a[10],temp=0,t,j;
     scanf("%d",&n);
     for(i=0;i<n;i++)
     {
         scanf("%d",&a[i]);
     }
-    for(i=0;i<n;i++)
+    for(j=0;j<n;j++)
     {
-       for(p=i+1;p<n;p++)
+       for(t=i+1;t<n;t++)
        {
-           if(a[i]>a[p])
+           if(a[j]>a[t])
            {
-               temp=a[i];
-               a[i]=a[p];
-               a[p]=temp;
+               temp=a[j];
+               a[j]=a[t];
+               a[t]=temp;
            }
        }
     }
