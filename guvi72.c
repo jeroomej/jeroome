@@ -4,7 +4,7 @@ int main(void)
 {
 char string[50];
 int i=0,count=0,flag=0;
-printf("\n enter the given string:");
+printf(" enter the given string:");
 scanf("%s",string);
 while(string[i]!='\0')
 {
@@ -14,11 +14,10 @@ i++;
 }
 if(flag==1)
 {
-	printf("\nyes");
+	printf("yes");
 }
 else
 {
-	printf("\n no");
+	printf(" no");
 }
-return 0;
 }
